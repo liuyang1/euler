@@ -6,21 +6,25 @@ def rev(n):
     return v
 
 
-oddset = frozenset([1,3,5,7,9])
 def isOddDigit(n):
     while n:
         r = n % 10
-        if r not in oddset:
+        if r % 2 == 0:
             return False
         n = n / 10
     return True
 
 
-N = 10 ** 9
-cnt = 0
-for n in xrange(1, N):
-    if n % 10 == 0:
-        continue
-    if isOddDigit(n + rev(n)):
-        cnt += 1
-print cnt
+def main():
+    N = 10 ** 7
+    cnt = 0
+    for n in xrange(1, N):
+        if n % 10 == 0:
+            continue
+        if isOddDigit(n + rev(n)):
+            cnt += 1
+    print cnt
+
+
+if __name__ == "__main__":
+    main()

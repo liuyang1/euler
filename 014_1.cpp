@@ -19,7 +19,7 @@ int main(){
     int m = 0;
     int mv = -1;
     int t;
-    
+
     unsigned long long thres = 1000*1000;
     for(unsigned long long i = thres >> 2; i <= thres; i++){
         t = cntColltz(i);

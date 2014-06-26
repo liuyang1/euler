@@ -105,7 +105,7 @@ def PrimeLst(n):
     for i in xrange(2,thres+1):
         if lst[i]==0:
             continue
-        for j in range(i+1,len(lst)):
+        for j in xrange(i+1,len(lst)):
             if lst[j]!=0 and lst[j]%lst[i]==0:
                 lst[j]=0
     lst = [i for i in lst if i!=0]

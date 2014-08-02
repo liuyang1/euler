@@ -1,9 +1,5 @@
 (define (triangle x) (/ (* x (+ x 1)) 2))
 
-(define (power n i)
-  (if (= i 0) 1
-    (* n (power n (- i 1)))))
-
 (define (factor n)
   (define (hlp num f)
     (if (= 0 (remainder num f))
@@ -12,7 +8,7 @@
   (define (loop num f)
     (if (= num 1) '()
       (let* ((freq (hlp num f))
-             (next (loop (/ num (power f freq)) (+ f 1))))
+             (next (loop (/ num (expt f freq)) (+ f 1))))
         (if (= freq 0)
           next
           (cons (cons f freq) next)))))

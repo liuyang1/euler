@@ -5,4 +5,4 @@
        (gen (cons n lst)))))
   (gen (list 2 1)))
 
-(displayln (apply + (filter even? (fib (* 4 1000 1000)))))
+(apply + (filter even? (fib (* 4 1000 1000))))

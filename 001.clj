@@ -1,5 +1,2 @@
-(defn isCond
-  [x]
-  (or (= 0 (mod x 3)) (= 0 (mod x 5))))
-(println (apply + (filter isCond
+(println (apply + (filter (fn [x] (or (= 0 (rem x 3)) (= 0 (rem x 5))))
                           (range 1000))))

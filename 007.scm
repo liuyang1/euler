@@ -7,7 +7,7 @@
 
 (define (prime-nth n)
   (define (iter i num)
-    (if (isPrime? num) 
+    (if (isPrime? num)
       (if (= i n) num
         (iter (+ i 1) (+ num 1)))
       (iter i (+ num 1))))

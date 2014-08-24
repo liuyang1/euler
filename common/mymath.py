@@ -19,6 +19,7 @@ def bingcd(a, b):
             b /= 2
         a, b = b, a % b
 
+
 def gcd(x, y):
     while 1:
         x, y = y, x % y
@@ -47,19 +48,21 @@ def isPrime(n):
     check is Prime,for positive integer.
     使用试除法
     """
-    if n<=1:
+    if n <= 1:
         return False
-    if n==2:
+    if n == 2:
         return True
-    i=2
+    i = 2
     thres = math.ceil(math.sqrt(n))
-    while i<=thres:
-        if n%i==0:
+    while i <= thres:
+        if n % i == 0:
             return False
         i += 1
     return True
 
 import random
+
+
 def isPrimeMillerRabin(N):
     """
     Miller-Rabin 随机素数检测
@@ -78,15 +81,16 @@ def isPrimeMillerRabin(N):
     for i in range(49):
         a = random.randint(1, N - 1)
         for r in range(s):
-            if pow(a, d) % N != 1 and pow(a, pow(2, r) * d) % N != N -1:
+            if pow(a, d) % N != 1 and pow(a, pow(2, r) * d) % N != N - 1:
                 return False
     return True
 
 
 def isPrimeAKS(n):
-    if n<=1:
+    if n <= 1:
         return False
     pass
+
 
 def isPrimeFermat(n):
     for i in range(49):
@@ -95,18 +99,19 @@ def isPrimeFermat(n):
             return False
     return True
 
+
 def PrimeLst(n):
     """
     使用筛法求素数
     """
-    lst = range(0,n+1)
+    lst = range(0, n + 1)
     lst[1] = 0
     thres = int(math.sqrt(n))
-    for i in xrange(2,thres+1):
-        if lst[i]==0:
+    for i in xrange(2, thres + 1):
+        if lst[i] == 0:
             continue
-        for j in xrange(i+1,len(lst)):
-            if lst[j]!=0 and lst[j]%lst[i]==0:
-                lst[j]=0
-    lst = [i for i in lst if i!=0]
+        for j in xrange(i + 1, len(lst)):
+            if lst[j] != 0 and lst[j] % lst[i] == 0:
+                lst[j] = 0
+    lst = [i for i in lst if i != 0]
     return lst

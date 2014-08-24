@@ -44,7 +44,7 @@ def isAmi(n):
     return False
 
 s = []
-for i in range(2,100000+1):
+for i in range(2,10000+1):
     if isAmi(i):
         s.append(i)
 

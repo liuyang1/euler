@@ -2,16 +2,19 @@ from decimal import Decimal
 
 inf = Decimal('Infinity')
 
+
 def getData():
-    # with open("data.107.example") as f:
-    with open("data.107") as f:
+    fn = "data.107"
+    # fn += ".example"
+    with open(fn) as f:
         ret = []
         for l in f.readlines():
-            l = l.replace('-','0')
+            l = l.replace('-', '0')
             l = l.split(',')
             l = [int(i) for i in l]
             ret.append(l)
         return ret
+
 
 def infinite(data):
     size = len(data)
@@ -22,7 +25,7 @@ def infinite(data):
 
 
 def miniNetwork(net):
-# find mini
+    # find mini
     s = 0
     v = inf
     for i, row in enumerate(net):

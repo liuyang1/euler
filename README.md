@@ -14,6 +14,10 @@ I just want share my idea, and encourage myself to solve more problems.
 [scheme](https://github.com/liuyang1/euler/blob/master/001.scm)
 [clojure](https://github.com/liuyang1/euler/blob/master/001.clj)
 
+### Prime
+#### 243 [Resilience](https://projecteuler.net/problem=243)
+[python](https://github.com/liuyang1/euler/blob/master/243.py)
+
 ### Fibonacci
 #### 002 [Even Fibonacci numbers](https://projecteuler.net/problem=2)
 [python](https://github.com/liuyang2/euler/blob/master/002.py)

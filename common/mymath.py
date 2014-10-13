@@ -20,6 +20,23 @@ def bingcd(a, b):
         a, b = b, a % b
 
 
+def factorLst(n, Plst=None):
+    if Plst == None:
+        Plst = PrimeLst(10**6)
+    lst = []
+    for i in Plst:
+        if n == 1:
+            break
+        if n % i == 0:
+            cnt = 0
+            while n % i == 0:
+                cnt += 1
+                n = n / i
+            item = (i, cnt)
+            lst.append(item)
+    return lst
+
+
 def gcd(x, y):
     while 1:
         x, y = y, x % y
@@ -102,16 +119,29 @@ def isPrimeFermat(n):
 
 def PrimeLst(n):
     """
-    使用筛法求素数
+    ref:
+        http://stackoverflow.com/questions/2068372/
+        fastest-way-to-list-all-primes-below-n-in-python
     """
-    lst = range(0, n + 1)
-    lst[1] = 0
-    thres = int(math.sqrt(n))
-    for i in xrange(2, thres + 1):
-        if lst[i] == 0:
-            continue
-        for j in xrange(i + 1, len(lst)):
-            if lst[j] != 0 and lst[j] % lst[i] == 0:
-                lst[j] = 0
-    lst = [i for i in lst if i != 0]
-    return lst
+    sieve = [True] * (n / 2)
+    for i in xrange(3, int(n ** 0.5) + 1, 2):
+        if sieve[i / 2]:
+            sieve[i * i / 2::i] = [False] * ((n - i * i - 1) / (2 * i) + 1)
+    return [2] + [2 * i + 1 for i in xrange(1, n / 2) if sieve[i]]
+
+
+def myPrime(n):
+    sieve = [True] * n
+    primes = [2]
+    for i in xrange(3, n, 2):
+        if sieve[i]:
+            primes.append(i)
+            for p in primes:
+                if i * p > n:
+                    break
+                sieve[i * p] = False
+    return [i for i in xrange(n) if sieve[i] and i % 2 != 0]
+
+if __name__ == "__main__":
+    print sum(PrimeLst(10 ** 7))
+    print sum(myPrime(10 ** 7))

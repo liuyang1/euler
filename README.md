@@ -14,6 +14,9 @@ I just want share my idea, and encourage myself to solve more problems.
 [scheme](https://github.com/liuyang1/euler/blob/master/001.scm)
 [clojure](https://github.com/liuyang1/euler/blob/master/001.clj)
 
+###001# 112 [Bouncy Number](https://projecteuler.net/problem=112)
+[python](https://github.com/liuyang1/euler/blob/master/112.py)
+
 ### Prime
 #### 243 [Resilience](https://projecteuler.net/problem=243)
 [python](https://github.com/liuyang1/euler/blob/master/243.py)

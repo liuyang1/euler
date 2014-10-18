@@ -15,11 +15,13 @@ def isBouncy(dig):
     inc = all([a <= b for a, b in p])
     return not (dec or inc)
 
-p = 0.99
+p0 = 0.99
 cnt = 0
 for i in itertools.count(100):
     if isBouncy(digit(i)):
         cnt += 1
-    if cnt >= i * p:
-        print i
+    if cnt == i * p0:
+        print "ans: ", cnt, i
         break
+    else:
+        print cnt / (i + 0.0), cnt, i

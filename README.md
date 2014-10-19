@@ -9,29 +9,38 @@ I just want share my idea, and encourage myself to solve more problems.
 
 ## CATEGORY
 ### Basic
-#### 001 [Multiples of 3 and 5](https://projecteuler.net/problem=1)
+
+001 [Multiples of 3 and 5](https://projecteuler.net/problem=1)
 [python](https://github.com/liuyang1/euler/blob/master/001.py)
 [scheme](https://github.com/liuyang1/euler/blob/master/001.scm)
 [clojure](https://github.com/liuyang1/euler/blob/master/001.clj)
 
-###001# 112 [Bouncy Number](https://projecteuler.net/problem=112)
+008 [Largest product in a series](https://projecteuler.net/problem=8)
+[python](https://github.com/liuyang2/euler/blob/master/008.py)
+[scheme](https://github.com/liuyang2/euler/blob/master/008.scm)
+[clojure](https://github.com/liuyang1/euler/blob/master/008.clj)
+[common lisp](https://github.com/liuyang1/euler/blob/master/008.cl)
+
+
+112 [Bouncy Number](https://projecteuler.net/problem=112)
 [python](https://github.com/liuyang1/euler/blob/master/112.py)
 
 ### Prime
-#### 243 [Resilience](https://projecteuler.net/problem=243)
+
+243 [Resilience](https://projecteuler.net/problem=243)
 [python](https://github.com/liuyang1/euler/blob/master/243.py)
 
 ### Fibonacci
-#### 002 [Even Fibonacci numbers](https://projecteuler.net/problem=2)
+
+002 [Even Fibonacci numbers](https://projecteuler.net/problem=2)
 [python](https://github.com/liuyang2/euler/blob/master/002.py)
 [scheme](https://github.com/liuyang2/euler/blob/master/002.scm)
 [clojure](https://github.com/liuyang2/euler/blob/master/002.clj)
+
 ### Computation Geometry
 
-#### 102 [Triangle containment](https://projecteuler.net/problem=102)
+102 [Triangle containment](https://projecteuler.net/problem=102)
 [python](https://github.com/liuyang1/euler/blob/master/102.py)
-
-point in triangle.
 
 ## FAQ
 ### what's XXX.data?

@@ -30,6 +30,12 @@ I just want share my idea, and encourage myself to solve more problems.
 243 [Resilience](https://projecteuler.net/problem=243)
 [python](https://github.com/liuyang1/euler/blob/master/243.py)
 
+#### Dvisor
+179 [Consecutive positive divisors](https://projecteuler.net/problem=179)
+[not fast, python](https://github.com/liuyang1/euler/blob/master/179.py)
+[enough, python](https://github.com/liuyang1/euler/blob/master/179_2.py)
+[sieve, python](https://github.com/liuyang1/euler/blob/master/179_3.py)
+
 ### Fibonacci
 
 002 [Even Fibonacci numbers](https://projecteuler.net/problem=2)

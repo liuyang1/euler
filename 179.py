@@ -1,4 +1,10 @@
 def cntDivisor(n):
+    """
+    >>> cntDivisor(14)
+    4
+    >>> cntDivisor(140)
+    12
+    """
     rem = 1
     cnt = 2
     while 1:
@@ -14,12 +20,12 @@ def cntDivisor(n):
     return cnt
 
 
-lastcnt = 2
-CNT = 0
-for i in range(3, 10 ** 7):
-    cnt = cntDivisor(i)
-    if lastcnt == cnt:
-        CNT += 1
-        print CNT, i - 1, i, cnt
-    lastcnt = cnt
-print CNT
+if __name__ == "__main__":
+    lastcnt = 2
+    CNT = 0
+    for i in range(3, 10 ** 5):
+        cnt = cntDivisor(i)
+        if lastcnt == cnt:
+            CNT += 1
+        lastcnt = cnt
+    print CNT

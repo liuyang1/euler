@@ -1,6 +1,5 @@
-#*-* coding=utf-8
+# *-* coding=utf-8
 import math
-import sys
 
 
 def bingcd(a, b):
@@ -21,11 +20,23 @@ def bingcd(a, b):
 
 
 def factorLst(n, Plst=None):
-    if Plst == None:
+    """
+    >>> factorLst(12)
+    [(2, 2), (3, 1)]
+    >>> factorLst(97)
+    [(97, 1)]
+    >>> factorLst(14)
+    [(2, 1), (7, 1)]
+    """
+    if Plst is None:
         Plst = PrimeLst(10**6)
     lst = []
     for i in Plst:
         if n == 1:
+            break
+        # this to skip scan all prime list
+        if n / i < i:
+            lst.append((n, 1))
             break
         if n % i == 0:
             cnt = 0
@@ -141,6 +152,12 @@ def myPrime(n):
                     break
                 sieve[i * p] = False
     return [i for i in xrange(n) if sieve[i] and i % 2 != 0]
+
+
+def prod(lst):
+    import operator
+    return reduce(operator.mul, lst, 1)
+
 
 if __name__ == "__main__":
     print sum(PrimeLst(10 ** 7))

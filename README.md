@@ -24,6 +24,8 @@ I just want share my idea, and encourage myself to solve more problems.
 052 [Permuted multiples](https://projecteuler.net/problem=52)
 [python](https://github.com/liuyang1/euler/blob/master/052.py)
 
+059 [XOR decryption](https://projecteuler.net/problem=59)
+[python](https://github.com/liuyang1/euler/blob/master/059.py)
 
 112 [Bouncy Number](https://projecteuler.net/problem=112),
 [python](https://github.com/liuyang1/euler/blob/master/112.py),

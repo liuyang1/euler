@@ -55,12 +55,37 @@ def gcd(x, y):
             return x
 
 
-def cntDigit(n):
+def cntDigit(n, base=10):
+    """
+    >>> cntDigit(1234)
+    4
+    """
     cnt = 0
     while n > 0:
         cnt += 1
-        n /= 10
+        n /= base
     return cnt
+
+
+def digit(n, base=10):
+    """
+    >>> digit(1234)
+    [4, 3, 2, 1]
+    """
+    lst = []
+    while n > 0:
+        lst.append(n % base)
+        n /= base
+    return lst
+
+
+def digitCounter(n, base=10):
+    """
+    >>> digitCounter(1234)
+    Counter({1: 1, 2: 1, 3: 1, 4: 1})
+    """
+    from collections import Counter
+    return Counter(digit(n, base))
 
 
 def getSumDigit(n):

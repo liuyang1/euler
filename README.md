@@ -32,6 +32,9 @@ I just want share my idea, and encourage myself to solve more problems.
 
 ### Prime
 
+058 [Spiral primes](https://projecteuler.net/problem=58)
+&nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/058.py),
+
 243 [Resilience](https://projecteuler.net/problem=243),
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/243.py),
 

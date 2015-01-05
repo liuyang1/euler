@@ -32,6 +32,9 @@ I just want share my idea, and encourage myself to solve more problems.
 
 ### Prime
 
+049 [Prime permutations](https://projecteuler.net/problem=49)
+&nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/049.py),
+
 058 [Spiral primes](https://projecteuler.net/problem=58)
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/058.py),
 

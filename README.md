@@ -27,6 +27,9 @@ I just want share my idea, and encourage myself to solve more problems.
 059 [XOR decryption](https://projecteuler.net/problem=59)
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/059.py)
 
+079 [Passcode derivation](https://projecteuler.net/problem=79)
+&nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/079.py)
+
 112 [Bouncy Number](https://projecteuler.net/problem=112),
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/112.py),
 

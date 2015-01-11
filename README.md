@@ -27,6 +27,9 @@ I just want share my idea, and encourage myself to solve more problems.
 059 [XOR decryption](https://projecteuler.net/problem=59)
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/059.py)
 
+062 [Cubic permutations](https://projecteuler.net/problem=62)
+&nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/062.py)
+
 079 [Passcode derivation](https://projecteuler.net/problem=79)
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/079.py)
 

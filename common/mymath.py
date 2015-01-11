@@ -75,7 +75,7 @@ def digit(n, base=10):
     lst = []
     while n > 0:
         lst.append(n % base)
-        n /= base
+        n //= base
     return lst
 
 
@@ -86,6 +86,18 @@ def digitCounter(n, base=10):
     """
     from collections import Counter
     return Counter(digit(n, base))
+
+
+def hashDigitCounter(n, base=10):
+    """
+    >>> hashDigitCounter(1234)
+    (0, 1, 1, 1, 1, 0, 0, 0, 0, 0)
+    """
+    cnt = digitCounter(n, base)
+    lst = [0 for i in range(base)]
+    for k, v in cnt.items():
+        lst[k] = v
+    return tuple(lst)
 
 
 def getSumDigit(n):
@@ -185,5 +197,6 @@ def prod(lst):
 
 
 if __name__ == "__main__":
-    print sum(PrimeLst(10 ** 7))
-    print sum(myPrime(10 ** 7))
+    pass
+    # print sum(PrimeLst(10 ** 7))
+    # print sum(myPrime(10 ** 7))

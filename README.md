@@ -7,6 +7,25 @@ Sorry for ProjectEuler.net. I known I shouldn't put this code to Internet.
 
 I just want share my idea, and encourage myself to solve more problems.
 
+status
+======
+Level 3 (4%-)
+
+Awards
+
+Got
+===
+* Baby Steps, solve 3 problems
+* Decathlete, solve 10 consective problems
+* The Journey Begins, Level 1
+* Trinary Triumph, solve 1, 3, 9, 27, 81 and 243
+
+TODO
+====
+* As Easy As Pi, solve 3, 14, 15, 92, 65, 25, *89*, 79, 32, *38*, 46
+
+    38 and 92
+
 ## CATEGORY
 ### Basic
 
@@ -20,6 +39,9 @@ I just want share my idea, and encourage myself to solve more problems.
 &nbsp;&nbsp;[scheme](https://github.com/liuyang1/euler/blob/master/008.scm),
 &nbsp;&nbsp;[clojure](https://github.com/liuyang1/euler/blob/master/008.clj),
 &nbsp;&nbsp;[common lisp](https://github.com/liuyang1/euler/blob/master/008.cl),
+
+032 [Pandigital products](https://projecteuler.net/problem=32)
+&nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/032.py)
 
 052 [Permuted multiples](https://projecteuler.net/problem=52)
 &nbsp;&nbsp;[python](https://github.com/liuyang1/euler/blob/master/052.py)

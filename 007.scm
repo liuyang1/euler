@@ -1,3 +1,5 @@
+#lang racket
+
 (define (isPrime? x)
   (define (helper i)
     (cond ((> (* i i) x) #t)
@@ -15,3 +17,5 @@
 
 (display (prime-nth 10001))
 (newline)
+(displayln (prime-nth 1))
+(displayln (prime-nth 0))

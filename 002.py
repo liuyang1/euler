@@ -9,4 +9,5 @@ def func(thresh):
         if a % 2 == 0:
             ret += a
 
-print func(4*1000*1000)
+
+print func(4 * 1000 * 1000)

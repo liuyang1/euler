@@ -1,3 +1,5 @@
+#lang racket
+
 (define (square x) (* x x))
 
 (define (defactor n)
@@ -12,4 +14,6 @@
 (display (defactor 13195))
 (newline)
 (display (defactor 600851475143))
+(newline)
+(display (defactor 625))
 (newline)

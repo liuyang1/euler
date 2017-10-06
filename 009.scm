@@ -1,3 +1,5 @@
+#lang racket
+
 (define (square x) (* x x))
 (define (isPythagorean? a b c)
   (eq? (+ (square a) (square b)) (square c)))
@@ -16,7 +18,7 @@
 (define (next-inf v)
   (let ((n (apply next v)))
    (if (and n (apply isPythagorean? n))
-     (reduce * 1 n)
+     (foldl * 1 n)
      (next-inf n))))
 
-(display (next-inf '(1 1 998)))
+(displayln (next-inf '(1 1 998)))

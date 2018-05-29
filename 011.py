@@ -7,14 +7,14 @@ def loaddata():
 
 
 def prod(lst):
-    return reduce(lambda x,y: x * y, lst, 1)
+    return reduce(lambda x, y: x * y, lst, 1)
 
 
 data = loaddata()
 
 max = 0
 for j in xrange(0, len(data)):
-    for i in xrange(0,len(data) - 4):
+    for i in xrange(0, len(data) - 4):
         v = prod(data[j][i: i + 4])
         if v > max:
             max = v
@@ -40,7 +40,7 @@ print max
 
 data = map(list, zip(*data))
 for j in xrange(0, len(data)):
-    for i in xrange(0,len(data) - 4):
+    for i in xrange(0, len(data) - 4):
         v = prod(data[j][i: i + 4])
         if v > max:
             max = v
@@ -63,4 +63,3 @@ for l in diag:
         if v > max:
             max = v
 print max
-

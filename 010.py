@@ -7,4 +7,10 @@ def isPrime(n):
             return False
         r += 1
 
-print sum((i for i in xrange(2, 2000 * 1000) if isPrime(i)))
+def oldSln():
+    print sum((i for i in xrange(2, 2000 * 1000) if isPrime(i)))
+
+
+def sieve(m):
+    for i in xrange(1, m):
+

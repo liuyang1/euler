@@ -1,4 +1,4 @@
-def gcdbin(a,b):
+def gcdbin(a, b):
     if a == 0:
         return b
     elif b == 0:
@@ -12,17 +12,18 @@ def gcdbin(a,b):
         if b % 2 == 0:
             return gcdbin(a, b / 2)
         else:
-            return gcdbin( abs(a - b), min(a, b))
+            return gcdbin(abs(a - b), min(a, b))
 from math import sqrt
 from sys import exit
 
-Square = [i**2 for i in range(1,1000+1)]
+Square = [i ** 2 for i in range(1, 1000 + 1)]
 Square = frozenset(Square)
+
 
 def triOne(n):
     m = n + 1
-    nn = n**2
-    mm = m**2
+    nn = n ** 2
+    mm = m ** 2
     mm1 = mm + 2 * m + 1
     l = []
     while 1:
@@ -30,7 +31,7 @@ def triOne(n):
         if ss < mm1:
             break
         if ss in Square:
-            l.append((n,m,int(sqrt(ss))))
+            l.append((n, m, int(sqrt(ss))))
         mm = mm1
         m += 1
         mm1 += 2 * m + 1
@@ -42,7 +43,7 @@ for i in range(333):
     lst = triOne(i)
     for c in lst:
         s = sum(c)
-        if s > 10**3:
+        if s > 10 ** 3:
             continue
         if s in ans.keys():
             ans[s] += 1
@@ -50,7 +51,7 @@ for i in range(333):
             ans[s] = 1
 
 vm = 4
-for k,v in ans.iteritems():
+for k, v in ans.iteritems():
     if v >= vm:
-        print k,v
+        print k, v
         vm = v
